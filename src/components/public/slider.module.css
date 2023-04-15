@@ -1,0 +1,68 @@
+.slider {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin: 36px 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+  gap: 24px;
+}
+.slider::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.slide {
+  display: inline-block;
+  width: 380px;
+  max-width: 80vw;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  user-select: none;
+}
+
+.slide-container {
+  flex: 1;
+  display: flex;
+  height: auto;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  -webkit-user-select: none;
+  gap: 16px;
+}
+.slide-container img {
+  border-radius: 4px;
+  transition: box-shadow 300ms;
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.16);
+}
+.slide-container img:hover {
+  border-radius: 4px;
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.36);
+}
+.slide-container div {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slide-container span {
+  max-width: 145px;
+  overflow: hidden;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

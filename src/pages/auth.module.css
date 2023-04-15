@@ -1,0 +1,43 @@
+.main {
+  display: flex;
+  width: 100vw;
+  height: 80vh;
+  margin-top: 20vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.main h1 {
+  margin: 0;
+}
+.main form {
+  display: flex;
+  margin: 24px 0;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+}
+.main form * {
+  height: 48px;
+  width: 50vw;
+  min-width: 200px;
+  max-width: 400px;
+  border-radius: 12px;
+}
+.main input {
+  padding: 0 16px;
+  border: 1px solid #00000033;
+}
+.main span:not(.black) {
+  color: #00a2a4;
+}
+.main a:not(.gray) {
+  color: #000;
+}
+.black {
+  color: #000;
+}
+.gray {
+  color: #00a2a4;
+}

@@ -1,0 +1,58 @@
+.category {
+  position: fixed;
+  top: 0;
+  right: -80vw;
+  width: 80vw;
+  max-width: 300px;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  background-color: #fff;
+  z-index: 3;
+}
+.category::-webkit-scrollbar {
+  display: none;
+}
+.category li[data-menu='true'] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.category li[data-role='title-menu'] {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.category li[data-role='title-menu'] strong {
+  font-weight: bold;
+}
+.category li[data-role='title-menu'] + li strong,
+.category li[data-role='title-menu'] + li i {
+  margin-left: 8px;
+  filter: contrast(0.5);
+}
+.category--close {
+  right: -80vw;
+  transition: right 250ms cubic-bezier(0.47, 0, 0.75, 0.72);
+}
+.category--open {
+  right: 0;
+  transition: right 250ms cubic-bezier(0, 0.79, 0.47, 0.72);
+}
+.category .badge {
+  padding: 16px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  filter: contrast(0.5);
+}
+
+.toggle {
+  width: 36px;
+  height: 36px;
+  padding: 6px;
+  background: url(./img/ic-back-arrow.svg) center no-repeat;
+}

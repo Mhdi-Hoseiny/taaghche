@@ -1,0 +1,15 @@
+.ico--category {
+  padding-left: 16px;
+  font-weight: normal;
+}
+
+.ico--category::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  padding-left: 16px;
+  vertical-align: middle;
+  background-size: contain !important;
+  background: url(./img/ic-category.svg) no-repeat center;
+}

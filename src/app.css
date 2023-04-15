@@ -1,0 +1,107 @@
+@font-face {
+  src: url('./assets/font/vazir.eot') format('eot'),
+    url('./assets/font/vazir.woff') format('woff'),
+    url('./assets/font/vazir.woff2') format('woff2'),
+    url('./assets/font/vazir.ttf') format('ttf');
+  font-family: 'Vazir';
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url('./assets/font/vazir-bold.eot') format('eot'),
+    url('./assets/font/vazir-bold.woff') format('woff'),
+    url('./assets/font/vazir-bold.woff2') format('woff2'),
+    url('./assets/font/vazir-bold.ttf') format('ttf');
+  font-family: 'Vazir';
+  font-weight: bold;
+  font-display: swap;
+}
+@font-face {
+  src: url('./assets/font/vazir-light.eot') format('eot'),
+    url('./assets/font/vazir-light.woff') format('woff'),
+    url('./assets/font/vazir-light.woff2') format('woff2'),
+    url('./assets/font/vazir-light.ttf') format('ttf');
+  font-family: 'Vazir';
+  font-weight: lighter;
+  font-display: swap;
+}
+
+/* resets */
+* {
+  box-sizing: border-box;
+}
+html {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  font-family: 'Vazir', sans-serif;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+ul,
+nav {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+nav {
+  cursor: pointer;
+}
+button {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+input {
+  font: inherit;
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  font: inherit;
+}
+
+/* helper */
+.ico--chevron-left {
+  width: 8px;
+  height: 12px;
+  display: inline-block;
+  background: url(./components/header/img/chevron-left.svg) no-repeat center;
+}
+.ico--chevron-down {
+  width: 12px;
+  height: 8px;
+  padding: 0 16px;
+  display: inline-block;
+  background: url(./components/header/img/chevron-down.svg) no-repeat center;
+}
+.btn--primary {
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 18px;
+  background-color: #00a2a4;
+}
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.d-none {
+  display: none !important;
+}

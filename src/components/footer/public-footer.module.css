@@ -1,0 +1,115 @@
+.public-footer {
+  display: grid;
+  margin: 36px;
+  row-gap: 36px;
+  column-gap: 16px;
+  border-top: 1px solid #0000001a;
+}
+.public-footer a {
+  color: #000;
+}
+.public-footer a:hover {
+  color: #00a2a4;
+}
+
+.public-footer > .about {
+  display: flex;
+  padding: 16px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #0000001a;
+}
+.public-footer > .about img:first-child {
+  width: 20vw;
+  min-width: 100px;
+  max-width: 200px;
+}
+.public-footer > .about p {
+  max-width: 80vw;
+}
+
+.public-footer > .social-media {
+  display: flex;
+  width: 100%;
+  padding: 16px 0;
+  color: #00a2a4;
+  font-size: 0.75rem;
+  border-top: 1px solid #0000001a;
+}
+
+.public-footer > div:last-child {
+  display: flex;
+  align-items: center;
+}
+.public-footer > div:last-child a {
+  padding: 0 8px;
+  font-size: 0.9rem;
+  color: #00a2a4;
+  border-left: 1px solid #000;
+}
+.public-footer > div:last-child a:last-child {
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .public-footer {
+    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .public-footer > .about,
+  .public-footer > .social-media,
+  .public-footer > div:last-child {
+    grid-column: span 2;
+  }
+
+  .public-footer > .social-media {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+  .public-footer > .social-media div:first-child {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .public-footer > div:last-child {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .public-footer {
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .public-footer > .about,
+  .public-footer > .social-media,
+  .public-footer > div:last-child {
+    grid-column: span 4;
+  }
+
+  .public-footer > .social-media {
+    align-items: center;
+    justify-content: space-between;
+    gap: 36px;
+  }
+  .public-footer > .social-media div:first-child {
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 36px;
+  }
+
+  .public-footer > div:last-child {
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,20 @@
+.bookshelf {
+  padding: 16px;
+}
+
+.bookshelf > :first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #4a4a4a;
+}
+.bookshelf > :first-child h2 {
+  margin: 0;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .bookshelf {
+    font-size: 0.75rem;
+  }
+}

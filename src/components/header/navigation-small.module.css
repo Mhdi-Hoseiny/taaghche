@@ -1,0 +1,8 @@
+.toggle {
+  width: 36px;
+  height: 36px;
+  padding: 6px;
+}
+.toggle--open {
+  background: url(./img/ic-menu.svg) center no-repeat;
+}
